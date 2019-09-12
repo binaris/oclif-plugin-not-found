@@ -1,7 +1,7 @@
 {
-  "name": "@oclif/plugin-not-found",
+  "name": "@binaris/oclif-plugin-not-found",
   "description": "\"did you mean\" for oclif",
-  "version": "1.2.3",
+  "version": "1.2.4",
   "author": "Jeff Dickey @jdxcode",
   "oclif": {
     "hooks": {
@@ -12,7 +12,7 @@
       "@oclif/plugin-commands"
     ]
   },
-  "bugs": "https://github.com/oclif/plugin-not-found/issues",
+  "bugs": "https://github.com/binaris/oclif-plugin-not-found/issues",
   "dependencies": {
     "@oclif/color": "^0.0.0",
     "@oclif/command": "^1.5.3",
@@ -47,13 +47,13 @@
     "/oclif.manifest.json",
     "/lib"
   ],
-  "homepage": "https://github.com/oclif/plugin-not-found",
+  "homepage": "https://github.com/binaris/oclif-plugin-not-found",
   "keywords": [
     "oclif-plugin"
   ],
   "license": "MIT",
   "main": "lib/index.js",
-  "repository": "oclif/plugin-not-found",
+  "repository": "binaris/oclif-plugin-not-found",
   "scripts": {
     "build": "rm -rf lib && tsc",
     "lint": "tsc -p test --noEmit && tslint -p test",
