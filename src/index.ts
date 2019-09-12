@@ -6,8 +6,8 @@ import * as _ from 'lodash'
 
 const hook: Hook.CommandNotFound = async function (opts) {
   const commandIDs = [
-    ...opts.config.commandIDs,
-    ..._.flatten(opts.config.commands.map(c => c.aliases)),
+    ...opts.config.commands.filter(c => !c.hidden).map(c => c.id),
+    ..._.flatten(opts.config.commands.filter(c => !c.hidden).map(c => c.aliases)),
     'version',
   ]
   if (!commandIDs.length) return
